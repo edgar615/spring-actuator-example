@@ -1,0 +1,11 @@
+server:
+  port: 9000
+
+management:
+  info:
+    defaults:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
