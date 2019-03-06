@@ -1,0 +1,16 @@
+server:
+  port: 9000
+
+management:
+#  endpoint:
+#    shutdown:
+#      enabled: true
+  endpoints:
+    jmx:
+      exposure:
+      #        exclude:
+        include: "*"
+    web:
+      exposure:
+        exclude: env, beans #默认值null
+        include: "*" #默认值info, health
