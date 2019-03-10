@@ -13,6 +13,7 @@
     <module>hello-world</module>
     <module>shutdown</module>
     <module>expose</module>
+    <module>health</module>
   </modules>
 
   <parent>
