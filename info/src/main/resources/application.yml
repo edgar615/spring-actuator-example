@@ -1,0 +1,15 @@
+server:
+  port: 9000
+
+info:
+  name: @project.artifactId@
+  build:
+    artifact:   @project.artifactId@
+    name: @project.artifactId@
+    version: @project.version@
+    description: 这是一个测试用例
+
+management:
+  info:
+    defaults:
+      enabled: false
