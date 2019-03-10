@@ -2,14 +2,28 @@ server:
   port: 9000
 
 info:
-  name: @project.artifactId@
+  # static properties
+  app:
+    name: Spring Boot Actuator Info Endpoint Configuration Example
+    description: This tutorial demonstrates how to customize the Spring Boot Actuator Info Endpoint.
+
+  # build properties from maven
   build:
-    artifact:   @project.artifactId@
+    groupId: @project.groupId@
+    artifact: @project.artifactId@
     name: @project.artifactId@
     version: @project.version@
-    description: 这是一个测试用例
+
+  # environment variables
+  env:
+    java:
+      vendor: ${java.specification.vendor}
+      vm-name: ${java.vm.name}
+      runtime-version: ${java.runtime.version}
 
 management:
   info:
-    defaults:
-      enabled: false
+#    defaults:
+#      enabled: false
+    git:
+      mode: full

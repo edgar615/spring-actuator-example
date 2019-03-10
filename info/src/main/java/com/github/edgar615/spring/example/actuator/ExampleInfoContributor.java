@@ -5,7 +5,7 @@ import org.springframework.boot.actuate.info.Info;
 import org.springframework.boot.actuate.info.InfoContributor;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class ExampleInfoContributor implements InfoContributor {
 
 	@Override
